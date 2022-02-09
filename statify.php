@@ -7,7 +7,7 @@
  * Author URI:  https://pluginkollektiv.org/
  * Plugin URI:  https://statify.pluginkollektiv.org/
  * License:     GPLv3 or later
- * Version:     1.8.3
+ * Version:     1.9.0
  *
  * @package WordPress
  */
@@ -20,7 +20,7 @@ defined( 'ABSPATH' ) || exit;
 define( 'STATIFY_FILE', __FILE__ );
 define( 'STATIFY_DIR', dirname( __FILE__ ) );
 define( 'STATIFY_BASE', plugin_basename( __FILE__ ) );
-define( 'STATIFY_VERSION', '1.8.3' );
+define( 'STATIFY_VERSION', '1.9.0' );
 
 
 /* Hooks */
@@ -66,6 +66,7 @@ function statify_autoload( $class ) {
 
 	$plugin_classes = array(
 		'Statify',
+		'Statify_Api',
 		'Statify_Backend',
 		'Statify_Frontend',
 		'Statify_Dashboard',
